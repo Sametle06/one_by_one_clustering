@@ -24,9 +24,18 @@ Since large dataset means large memory consumption, we tried to be selective to 
 
 In this selection, basic clustering is used. As points are coming, they are clustered according to their similarities between the previous cluster centers. After points are placed, no center recalculation is done to not increase complexity. The following figure gives visual aid:
 
-.center[
 ![basic_figure](https://user-images.githubusercontent.com/37181660/107857952-8a2c7b80-6e42-11eb-80eb-121b2c9670fa.PNG)
-.caption[
-*Figure-1 Visual Representation of Clustering while updateReps = 'basic'*
-]
-]
+
+#### updateReps: 'mid'
+
+When 'mid' is selected as center updating option, summation of similarities of each point to each point is held as in python dictionary. As new point is added to cluster, similarity sum is recalculated and the point with maximum similarity is seleceted as center.
+
+![mid_figure](https://user-images.githubusercontent.com/37181660/107858174-e512a280-6e43-11eb-902b-3ceaea5a57a2.PNG)
+
+#### updateReps: 'deep'
+
+'deep' selection is the most expansieve method in this clustering methods. Since it uses both similarity and number of nearest neighbors are used to calibrate the center of each cluster. To decrease the space consumption, counting neighbors algortihm is applied on the points that have the highest similarity. The number of points is change as the number of cluster members. 
+
+![deep_figure](https://user-images.githubusercontent.com/37181660/107858387-f7411080-6e44-11eb-919e-b0941540c839.PNG)
+
+With this method, clustering the large dataset can be applicable without considering symmetric distance matrices or large graph constructions to find centers. Also, since it provide different distance functions it can be applied number kind of data. 
