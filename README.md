@@ -6,15 +6,14 @@ This clustering algorithm was designed to cluster very large datesets like sets 
 
 The main function we use is  'obyone()' to achive clustering. The parameters of the function:
 
--   *data: A feature dataset
--    *cutoff: A threshold to form clusters
--    *function: A similarity function. (default: Euclidean),
+-   *data*: A feature dataset
+-    *cutoff*: A threshold to form clusters
+-    *function*: A similarity function. (default: Euclidean),
 -              {Tanimoto, Manhattan, Euclidean, Cosine, Minkowski}
--    *isBit: A boolean value to indicate whether data is a rdkit.bitvector or not. If True,
+-    *isBit*: A boolean value to indicate whether data is a rdkit.bitvector or not. If True,
            rdkit.DataStructs.BulkTanimotoSimilarity function will be used.
--    *updateReps: A parameter that decides to how to adjust centers of clusters. (default: ‘basic’), 
-                {‘basic’, ’mid’, ’deep’}.
-    	        ‘basic’: No adjustment for center. 1st cluster member is the center
-    	        ‘mid’: Adjustment for center based on similarity sum
-    	        ‘deep’: Both similarity and number neighbors to adjust center
--   	*p: p value to calculate Minkowski similarity. (if p = 1: Manhattan, if p = 2: Euclidean similarities) 
+-    *updateReps*, {‘basic’, ’mid’, ’deep’}, (default: ‘basic’): A parameter that decides to how to adjust centers of clusters.
+-    	        **basic**: No adjustment for center. 1st cluster member is the center
+-    	        **mid’**: Adjustment for center based on similarity sum
+-    	        **deep**: Both similarity and number neighbors to adjust center
+-   	*p*: p value to calculate Minkowski similarity. (if p = 1: Manhattan, if p = 2: Euclidean similarities) 
