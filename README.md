@@ -26,9 +26,7 @@ In this selection, basic clustering is used. As points are coming, they are clus
 
 .center[
 ![basic_figure](https://user-images.githubusercontent.com/37181660/107857952-8a2c7b80-6e42-11eb-80eb-121b2c9670fa.PNG)
-
 .caption[
 *Figure-1 Visual Representation of Clustering while updateReps = 'basic'*
 ]
-*Figure-1 Visual Representation of Clustering while updateReps = 'basic'* 
 ]
