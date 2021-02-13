@@ -15,3 +15,9 @@ The main function we use is  'obyone()' to achive clustering. The parameters of 
   - *mid*: Adjustment for center based on similarity sum.
   - *deep*: Both similarity and number neighbors to adjust center.
 - **p**: p value to calculate Minkowski similarity. (if p = 1: Manhattan, if p = 2: Euclidean similarities) 
+
+### Expanse Explanation of Parameter 'updateReps':
+
+Since large dataset means large memory consumption, we tried to be selective to lower this consumption as much as possible. To achieve it, we present three methods of calibrating the centers of clusters. These three methods are named as 'basic', 'mid' and 'deep'. 
+
+#### updateReps: 'basic'
