@@ -24,7 +24,11 @@ Since large dataset means large memory consumption, we tried to be selective to 
 
 In this selection, basic clustering is used. As points are coming, they are clustered according to their similarities between the previous cluster centers. After points are placed, no center recalculation is done to not increase complexity. The following figure gives visual aid:
 
+.center[
 ![basic_figure](https://user-images.githubusercontent.com/37181660/107857952-8a2c7b80-6e42-11eb-80eb-121b2c9670fa.PNG)
 
+.caption[
+*Figure-1 Visual Representation of Clustering while updateReps = 'basic'*
+]
 *Figure-1 Visual Representation of Clustering while updateReps = 'basic'* 
-
+]
