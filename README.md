@@ -11,7 +11,7 @@ The main function we use is  'obyone()' to achive clustering. The parameters of 
 - **function**, {Tanimoto, Manhattan, Euclidean, Cosine, Minkowski}, (default: Euclidean):A similarity function.
 - **isBit**: A boolean value to indicate whether data is a rdkit.bitvector or not. If True, rdkit.DataStructs.BulkTanimotoSimilarity function will be used.
 - **updateReps**, {‘basic’, ’mid’, ’deep’}, (default: ‘basic’): A parameter that decides to how to adjust centers of clusters.
- - *basic*: No adjustment for center. 1st cluster member is the center.
- - *mid*: Adjustment for center based on similarity sum.
- - *deep*: Both similarity and number neighbors to adjust center.
+- *basic*: No adjustment for center. 1st cluster member is the center.
+- *mid*: Adjustment for center based on similarity sum.
+- *deep*: Both similarity and number neighbors to adjust center.
 - **p**: p value to calculate Minkowski similarity. (if p = 1: Manhattan, if p = 2: Euclidean similarities) 
