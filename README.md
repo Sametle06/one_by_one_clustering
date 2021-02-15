@@ -38,4 +38,4 @@ When 'mid' is selected as center updating option, summation of similarities of e
 
 ![deep_figure](https://user-images.githubusercontent.com/37181660/107858387-f7411080-6e44-11eb-919e-b0941540c839.PNG)
 
-With this method, clustering the large dataset can be applicable without considering symmetric distance matrices or large graph constructions to find centers. Also, since it provide different distance functions it can be applied number kind of data. 
+With this method, clustering the large dataset can be applicable without considering symmetric distance matrices or large graph constructions to find centers. Also, since it provide different distance functions it can be applied any kind of data. 
