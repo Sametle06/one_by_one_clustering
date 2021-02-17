@@ -44,7 +44,7 @@ class similarity_functions():
             for p,o in zip(point,i):
                 if p == o: counter +=1
             joint = counter
-            union = len(p) + len(o) - joint
+            union = len(point) + len(others[0]) - joint
             sims.append(joint/union)
             
         return sims
